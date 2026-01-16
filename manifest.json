@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Hotkey Popup",
+  "version": "1.0.0",
+  "action": {
+    "default_title": "Hotkey Popup"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "show-ui": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Show the popup UI"
+    }
+  },
+  "permissions": ["tabs", "windows"],
+  "host_permissions": []
+}
