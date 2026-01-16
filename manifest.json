@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Hotkey Popup",
+  "name": "Fight the Good Fight",
   "version": "1.0.0",
   "action": {
-    "default_title": "Hotkey Popup"
+    "default_title": "Fight the Good Fight"
   },
   "background": {
     "service_worker": "background.js"
