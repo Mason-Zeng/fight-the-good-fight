@@ -1,5 +1,8 @@
-document.getElementById("close").addEventListener("click", () => {
-  window.close();
-});
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("addTextBtn");
+  const text = document.getElementById("encouragingText");
 
-document.getElementById("text").focus();
+  btn.addEventListener("click", () => {
+    text.textContent = "test";
+  });
+});
