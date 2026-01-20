@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const video = document.getElementById("video");
 
     video.muted = false;
-    video.volume = 1.0;
+    video.volume = 1;
     console.log(video.muted);
 
     video.play().catch((err) => {
