@@ -1,4 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
+  function enableSound() {
+    const video = document.getElementById("video"); // re-grab current element
+
+    video.muted = false;
+    video.volume = 5.0;
+    console.log(video.muted);
+
+    video.play().catch((err) => {
+      console.warn("play() failed:", err);
+    });
+  }
+  document.addEventListener("mousemove", enableSound, { once: true });
+  
   let customTexts = readFromStroage();
   let textsArray = [
     "Jesus is rooting for you. Don't let him down.",
@@ -97,3 +110,4 @@ function readFromStroage(){
   const texts = stored ? JSON.parse(stored) : [];
   return texts;
 }
+
