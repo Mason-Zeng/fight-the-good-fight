@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   function enableSound() {
-    const video = document.getElementById("video"); // re-grab current element
+    const video = document.getElementById("video");
 
     video.muted = false;
     video.volume = 5.0;
