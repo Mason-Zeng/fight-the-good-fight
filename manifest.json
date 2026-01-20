@@ -3,8 +3,7 @@
   "name": "Fight the Good Fight",
   "version": "1.0.0",
   "action": {
-    "default_title": "Fight the Good Fight",
-    "default_popup": "popup.html"
+    "default_title": "Fight the Good Fight"
   },
   "background": {
     "service_worker": "background.js"
